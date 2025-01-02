@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,13 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
+            Salaries salaries = new Salaries();
+            //ArrayList salaryList = salaries.GetSalaries();
+            List<float> salaryList = salaries.GetSalaries();
+            float salary = salaryList[1];
+            salary = salary * 1.02f;
+            Console.WriteLine(salary);
+            Console.ReadKey();
         }
     }
 }
